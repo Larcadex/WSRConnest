@@ -18,12 +18,12 @@ public class SignUp extends AppCompatActivity {
         EditText email = findViewById(R.id.editTextTextEmailAddress1);
         EditText password = findViewById(R.id.editTextTextPassword1);
 
-        String emailStr = email.getText().toString();
-        String passwordStr = password.getText().toString();
+        String email1 = email.getText().toString();
+        String password1 = password.getText().toString();
 
         Intent intent = new Intent(this, SignIn.class);
-        intent.putExtra("email", emailStr);
-        intent.putExtra("password", passwordStr);
+        intent.putExtra("email", email1);
+        intent.putExtra("password", password1);
         startActivity(intent);
 
 
